@@ -1,0 +1,210 @@
+1.Which directive can be used to write AngularJS expressions?
+
+a) ng-expression
+b) ng-bind
+c) ng-statement
+d) ng-bindexpression
+
+Ans: b
+
+2. Which is the syntax to generate a class in Angular using Angular CLI?
+
+a) ng generate service myclass[options]
+b) ng generate class myClass [options]
+c) new ng generate class myclass[optios]
+d) none
+
+Ans:b
+
+3.Which type of binding is the following code?
+
+	<h2 [ngStyle]="titleStyles"></h2>
+
+a)Style Binding
+b)Style Binding using property
+c)Style Binding using objects
+d)All the above
+
+Ans: c
+
+4.Which type of binding is the following code?
+
+<button (click)="greeting = 'Welcome Suriya'">Greet</button>
+
+a)Style Binding
+b)Style Binding using property
+c)Class Binding
+d)Event Binding
+
+Ans:d
+
+5.<input #myInput type="text" /> Here in this code what is #myInput?
+
+a)Template Reference Variable
+b)Id Reference variable
+c)Class Reference Variable
+d)Reference Variable
+
+Ans:a
+
+6.Find the missing one in the following tag?
+
+<input [(missing code)]="name" type="text" />
+    {{ name }} 
+
+a)ngForm
+b)ngModel
+c)ngClass
+d)none
+
+Ans: b
+
+7.  <h2>Employee List</h2>
+    <ul *ngFor="let employee of employees">
+      <li>{{ employee.id }} </li>
+    </ul>
+	In the above code what does {{employee.id}} means?
+
+a)Property name 
+b)Object name
+c)Interpolation
+d)All
+
+Ans:c
+
+8.The OnInit interface should implements which method?
+
+a)Init() 
+b)ngInit()
+c)ngOnInit()
+d)All
+
+Ans:c
+
+9. Find the missing code from the following statement?
+
+	export class EmployeeService {
+  	private _url: string = '/assets/data/employee.json';
+  	constructor(missing code) {}
+  	getEmployees(): Observable<IEmployee[]> {
+     return this.http.get<IEmployee[]>(this._url);
+     }
+
+a)private router:Router 
+b)private activeRouter:ActivatedRouter
+c)private service:EmployeeService
+d)private http:HttpClient
+
+And:d
+
+10.Find the missing code from the following statement?
+
+	<h2 *ngIf="displayName; else elseblock">Hello Everyone!!!!</h2>
+    <missing tag #elseblock>
+      <h2>Bye All</h2>
+    </missing tag>
+
+a)<div></div>
+b)<p></p>
+c)<ng-template></ng-template>
+d)All
+
+Ans: c
+
+11.Which decorator is used for configuring model class?
+
+a)@NgApp
+b)@NgModule
+c)Both a and b  are correct
+d)None
+
+Ans:b
+
+12.Which decorator is used to make a class a service?
+
+a)Injectable
+b)Component
+c)Server
+d)Injector
+
+Ans:a
+
+13.What will be the output for the following code?
+
+<h2>{{ 3.145 | number : '3.1-2' }}</h2>
+
+a)3.14
+b)03.145
+c)3.145
+d)003.15
+
+Ans:d
+
+14.Find out the template statement from the following code?
+
+<button (click)="deleteHero()">Delete hero</button>
+
+a)button
+b)click
+c)deleteHero()
+d)Delete hero
+
+Ans:c
+
+15.Choose the right syntax for ngFor directive? 
+
+a)<ul><li *ngFor = "let items in itemlist"> {{ item }} </li></ul>
+b)<ul><li ngFor = "let items in itemlist"> {{ item }} </li></ul>
+c)<ul><li *ngFor = "items in itemlist"> {{ item }} </li></ul>
+d)All
+
+Ans: a
+
+16.Choose the right statement to inject the service into any component.
+
+a)export class NewComponent implements OnInit {private myDataService: MyDataService}
+b)ngOnInit(){private myDataService: MyDataService}
+c)constructor(private myDataService: MyDataService) { }
+d)None
+
+Ans:c
+
+17.Which character is used for chaining multiple pipes?
+
+a)|
+b):
+c)Both
+d)None of above
+
+Ans:a
+
+18.What is .subscribe?
+
+a)Streams data in asynchronously
+b)Streams data in synchronously
+c)Both
+d)None of above
+
+Ans:c
+
+19. Which module is used used for communicating with a backend service via the HTTP protocol?
+
+a)FormsModule 
+b)ReactiveFormsModule
+c)AppRoutingModule
+d)HttpClient 
+
+Ans:d
+
+20.Find out the output for the following code?
+
+	<input [(ngModel)]="name" type="text" />
+    {{ name }} 
+
+a)Event Binding
+b)Two Way Binding
+c)Property binding
+d)One Way Binding
+
+ans:b
+

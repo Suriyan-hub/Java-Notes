@@ -1,0 +1,103 @@
+1.For an entity class Car(id, model,year) which of these methods are automatically synthesised in JpaRepository?
+
+a) findCarByModel
+b) findByModelAndIdAndYear
+c) findByModel
+d) findModel
+
+Ans:c
+
+2.which of the following is used to create a custom repository in Spring data JPA?
+
+a) RepositoryRestResource
+b) ReactiveSortingRepository
+c) CrudRepository
+d) All the above
+
+Ans: c
+
+3. Find out the missing annotation from the following code?
+
+	@<missing annotation>("from Student where course=?1 order by sname")
+	List<Student> findByCourseSorted(String course);
+
+a) Param
+b) QueryParam
+c) QueryParameter
+d) Query
+
+Ans:d
+
+4. Which Exception will throw by getOne() if the record does not exixts?
+
+a) EntityNotFoundException. 
+b) IllegalStateException
+c) ClassNotFoundException
+d) SQLException
+
+Ans:a
+
+5.What are the examples of an Entity with the embedded class?
+
+a) Import javax.persistence.NamedQuerieswrong
+b) Import javax.persistence.NamedQuery
+c) Import javax.persistence.Table
+d) All of the above
+
+Ans:d
+
+6.Which annotation is used to create Pk-Fk relation between two tables?
+
+a) JoinColumn
+b) ForeignKey
+c) JoinedKey
+d) None of these
+
+Ans:a
+
+7.What are the JPA @Entity association attributes?
+
+a) Association direction
+b) Association multiplicity
+c) Association cascade behavior
+d) Association validation
+
+Ans:d
+
+8.Which method is inherited from interface QueryByExampleExecutor?
+
+a) deleteAll
+b) saveAll
+c) findBy
+d) findById
+
+Ans:c
+
+9.Which annotation is required to enable Spring Data JPA features from the following code?
+
+	@Configuration
+	@<missing code>(basePackages = "com.netsurfingzone.repository")
+	public class JpaConfig {
+ 
+	}
+
+a) Repository
+b) JpaRepository
+c) RestRepositories
+d) EnableJpaRepositories
+
+Ans: d
+
+10. find out the missing annotation from the following code?
+
+	@<missing annotation>
+	public void deleteAllInBatch() {
+		studentRepository.deleteAllInBatch();
+	}
+
+a) RequestMapping
+b) ResponseBody
+c) Transactional
+d) None
+
+Ans:c

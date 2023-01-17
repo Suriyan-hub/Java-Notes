@@ -1,0 +1,125 @@
+1.What will be the output from the following code?
+	
+	@<missing code>
+	public class StudentRestController {}
+
+a) Autowired
+b) RestController
+c) Component
+d) Configuration
+
+Ans:b
+
+2.What is the protocol used in REST?
+
+a) FTP
+b) HTTP
+c) JMX
+d) SOAP
+
+Ans:b
+
+3.What will be the output from the following code?
+	@<missing code>("/student")
+	public Student addStudent(Student student) 
+	{
+		repo.save(student);
+		return student;
+	}
+
+a) DeleteMapping
+b) GetMapping
+c) PutMapping
+d) PostMapping
+
+Ans:d
+
+
+4.What will be the output from the following code?
+
+	@<missing code>(collectionResourceRel = "students",path="students")
+	public interface StudentRepo extends JpaRepository<Student, Integer> {
+
+	}
+
+a) RequestMapping
+b) RestController
+c) RepositoryRestResource
+d) ResponseBody
+
+Ans:c
+
+5.Choose the correct URI format to get a sub-resource by resource id and sub-resource id
+
+a) /{resource}/{resource-id}/{sub-resource}/{sub-resource-id}
+b) /{resource}/{sub-resource}/{sub-resource-id}
+c) {sub-resource}/{sub-resource-id}/{resource}/{resource-id}
+d) /{resource}/{resource-id}/{sub-resource-id}/{sub-resource}
+
+Ans:a
+
+6.Find out the missing annotation from the following code.Annotation added as an input parameter to the handler Method.  
+
+	@GetMapping("/student/{sid}")
+	public Optional<Student> getStudent(@<missing code>("sid") int sid)
+	{
+		
+    	return repo.findById(sid);
+	}
+
+a) Path
+b) PathVariable
+c) PathLocale
+d) None
+
+Ans:b
+
+7.Annotation which allows the Jaxb2Marshaller marshaller to detect a class’s (i.e., object’s) fields.
+
+a) @XmlRootElement
+b) @XmlRoot
+c) @NotNull
+d) None of the mentioned
+
+Ans:a
+
+8.Spring Boot offers ______ template to consume REST Services.
+
+a) RestTemplate
+b) MockMVC
+c) RestMVC
+d) None of the options
+
+Ans:a
+
+9.Which annotation can be used to run quick unit tests from the following code?
+
+	@<missing code>
+	class SpringBootDataRestApplicationTests {
+
+		@Test
+		void contextLoads() {}
+
+	}
+
+a) IntTest
+b) IntegrateTest
+c) SpringTest
+d) SpringBootTest
+
+Ans: d
+
+10. Which annotation can be used to generate key value automatically find out from the following code?
+
+	@Entity
+	public class Book
+	{
+	 	@<missing code>
+		private int bid;
+		private String bname;
+		private String author;
+	}
+a) Id
+b) Qualifier
+c) GeneratedValue
+d) Primary

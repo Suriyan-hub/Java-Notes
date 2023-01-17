@@ -1,0 +1,167 @@
+1.What will be the output of the following code?
+	@<missing code>
+	public class Car implements Vehicle{
+		public void drive() {
+		System.out.println("Driving... ");
+	}}
+
+a) Autowired
+b) Primary
+c) Component
+d) Configuration
+
+Ans:c
+
+2.What will be the output of the following XML code?
+
+	<bean id="abc" class="com.demo.springdemo.abc">
+			  
+		<missing tag value="hi"></missing tag>
+		
+	</bean>
+
+a) <context:component-scan>
+b) <property>
+c) <bean>
+d) <constructor-arg>
+
+Ans:d
+
+3.What will be the output of the following code?
+   First class
+
+	public class Car implements Vehicle{
+		public void drive() {
+		System.out.println("Driving... ");
+	}}
+
+	Second Class
+
+	public class App 
+	{
+    public static void main( String[] args)
+    {   
+        ApplicationContext context=new ClassPathXmlApplicationContext();
+		  Vehicle v=(Vehicle) context.getBean("vehicle");
+        v.drive();
+	 }
+	}
+a) Driving
+b) Error
+c) IllegalStateException
+d) Exception
+
+Ans:c
+
+4.What will be the output of the following code?
+	public class UserDAO {
+	@<missing code>
+	public void init() throws ClassNotFoundException, SQLException 
+	{
+		System.out.println("Insisde the init()");
+		createConnectionDB();
+	}
+a) Qualifier
+b) Primary
+c) PostConstruct
+d) Bean
+
+Ans:c
+
+5.What will be the output of the following code?
+	public class App 
+	{
+    public static void main( String[] args)
+    {   
+        <Missing statement>  ct=new ClassPathXmlApplicationContext("xyz.xml");
+		  Student s=ct.getBean("stud",Student.class);
+    }
+	}
+a) Context
+b) BeanFactory
+c) contextConfig
+d) ClassPathXmlApplicationContext
+
+Ans:d
+
+6.Which tag is used to activate bean life cycle?
+
+a) <context:component-scan>
+b) <context:annotation-config>
+c) <constructor-arg>
+d)  none
+
+Ans:b
+
+7.What will be the output of the following XML code?
+
+	<bean id="user" class="com.demo.springdemo.User" <missing attribute> ="init">
+
+a) destroy-method
+b) default-init-method
+c) default-destroy-method
+d) init-method
+
+Ans: d
+
+8.What will be the output of the following code?
+	public class Redme {
+	
+	@<missing code>
+	MobileProcessor cpu;//Interface ref-variable
+	
+	public MobileProcessor getCpu() {
+		return cpu;
+	}
+
+	public void setCpu(MobileProcessor cpu) {
+		this.cpu = cpu;
+	}}
+
+a) Autowired
+b) Qualifier
+c) Controller
+d) RequestMapping
+
+Ans:a
+
+9. In Which file the following tags will save?
+	
+	<servlet>
+	<servlet-name>SoftwareTestingHelp</servlet-name>
+	<servlet-class>org.Springframework.web.servlet.DispatcherServlet</servlet-class>
+	<load-on-startup>1</load-on-startup>
+	</servlet>
+
+a) -servlet.xml
+b) abc.java
+c) web.xml
+d) pom.xml
+
+Ans:c
+
+10. Which container will be created by the DispatcherServlet when it found the following file?
+
+	filename:demo-servlet.xml
+
+	<?xml version="1.0" encoding="UTF-8"?>
+	<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+       
+    <context:annotation-config> </context:annotation-config> 
+    <context:component-scan base-package="com.demoSpring.controllers"></context:component-scan>
+   
+   	</beans> 
+
+a) BeanFactory
+b) ApplicationContext
+c) WebApplicationContext
+d) IoC Container
+
+Ans:c

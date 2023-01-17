@@ -1,0 +1,152 @@
+1.What will be the output of the following code?
+
+	@SpringBootApplication
+	public class DemoApplication {
+
+		public static void main(String[] args) {
+		ConfigurableApplicationContext context=SpringApplication.run(DemoApplication.class, args);
+		Employee e=context.getBean(Employee.class);
+		e.show();
+	}
+	@<missing code>
+	public class Employee {
+		private int eid;
+		private int ename;
+	}
+
+a) Autowired
+b) Primary
+c) Component
+d) Configuration
+
+Ans: c
+
+2.What will be the output of the following code?
+
+	@<missing code>(value="prototype")
+	public class Student {
+		private int sid;
+		private int sname;
+	}
+a) Qualifier
+b) Primary
+c) Component
+d) Scope
+
+Ans:d
+
+3.What will be the output of the following code?
+
+	@Component
+
+	public class Person{
+	private int pid;
+	private int pname;
+	
+	@<missing code>
+	private Laptop laptop;
+	
+	}
+a) Scope
+b) Qualifier
+c) Autowired
+d) Component
+
+Ans:c
+
+4.What will be the output of the following code?
+	
+	@Controller
+	public class HomeController
+	{
+	  @<missing code>("Home")
+		public String Home()
+		{
+	 		System.out.println("hai");
+	 		return "Home.jsp";
+		}
+	}
+a) Scope
+b) ResponseBody
+c) Qualifier
+d) RequestMapping
+
+Ans:d
+
+5.What will be the output of the following code?
+
+	@Controller
+	public class HomeController
+	{
+		@RequestMapping("Second")
+		public String Second(@<missing code> String myName1,HttpSession session)
+		{
+		
+			session.setAttribute("name", myName1);
+			return "Second";
+		}
+	}
+
+a) Scope
+b) ResponseBody
+c) RequestParam
+d) RequestMapping
+
+Ans:c
+
+6.Find out the missing statement in the following code?
+
+	@Controller
+	public class FirstController
+	{
+		
+		@RequestMapping("Fourth")
+		public ModelAndView Fourth(Student stud)
+		{
+			<missing statement>
+			obj.addObject("obj",stud);
+			obj.setViewName("Fourth");
+			return obj;
+		}
+	}
+
+a) ModelandView obj=new ModelandView(Object obj)
+b) ModelandView obj=new ModelandView()
+c) ModelandViewContainer obj=new ModelandViewContainer()
+d) Student obj=new Student()
+
+7. Find out the statement for Dependency Injection?
+
+a) context.getBean(Class <T>)
+b) context.getBean();
+c) context.getBeansOfType(Class <T>)
+d) none
+
+Ans: a
+
+8.Starting points of Spring Boot Application?
+
+a) @Controller
+b) @SpringBootApplication
+c) @Service
+d) None of the Above
+
+Ans: b
+
+9.What will be the output for Set/Change port in Spring Boot?
+	
+a) server.port=8080
+b) server.ports=8080
+c) servers.port=8080
+d) servers.ports=8080
+
+Ans:a
+
+10.Choose correct Code Snippet used to exclude
+
+a) @SpringBootApplication(exclude ={Employee.class}) Public class Empo{}
+b) @SpringBootApplication(exclude = ={Employee.class}) Public class Empo{}
+c) @SpringBootApplication(include !={Employee.class}) 
+d) None
+
+Ans:a
